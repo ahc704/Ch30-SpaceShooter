@@ -20,6 +20,28 @@ public class BoundsCheck : MonoBehaviour
     
     void LateUpdate()
     {
-        
+        Vector3 pos = transform.position;
+
+        if(pos.x > camWidth - radius)
+        {
+            pos.x = camWidth - radius);
+        }
+
+        if(pos.x < -camWidth + radius)
+        {
+            pos.x = -camWidth + radius;
+        }
+
+        if (pos.y > camWidth - radius)
+        {
+            pos.y = camWidth - radius);
+        }
+
+        if (pos.y < -camWidth + radius)
+        {
+            pos.y = -camWidth + radius;
+        }
+
+        transform.position = pos;
     }
 }
