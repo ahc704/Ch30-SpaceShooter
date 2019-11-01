@@ -8,7 +8,7 @@ public class Projectile : MonoBehaviour
 
     void Awake()
     {
-        bndCheck = GetComponent<BoundsCheck>;
+        bndCheck = GetComponent<BoundsCheck>();
     }
 
     // Update is called once per frame
