@@ -31,7 +31,7 @@ public class BoundsCheck : MonoBehaviour
 
         if(pos.x > camWidth - radius)
         {
-            pos.x = camWidth - radius);
+            pos.x = (camWidth - radius);
             isOnScreen = false;
             offRight = true;
         }
@@ -45,7 +45,7 @@ public class BoundsCheck : MonoBehaviour
 
         if (pos.y > camWidth - radius)
         {
-            pos.y = camWidth - radius);
+            pos.y = (camWidth - radius);
             isOnScreen = false;
             offUp = true;
         }

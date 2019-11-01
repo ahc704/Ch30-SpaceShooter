@@ -17,7 +17,7 @@ public class Hero : MonoBehaviour
     [Header("Set Dynamically")]
     [SerializeField]
     private float _shieldLevel = 1;
-    public float shieldLevel = 1;
+    //public float shieldLevel = 1;
 
     private GameObject lastTriggerGo = null;
 
@@ -47,7 +47,7 @@ public class Hero : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(yAxis*pitchMult,xAxis*rollMult, 0);
 
-        if(Input.GetKeyDown(KeyCode.Space)
+        if(Input.GetKeyDown(KeyCode.Space))
         {
             TempFire();
         }
@@ -73,7 +73,7 @@ public class Hero : MonoBehaviour
         }
         lastTriggerGo = go;
 
-        if(go.tag = "Enemy")
+        if(go.tag == "Enemy")
         {
             shieldLevel--;
             Destroy(go);
